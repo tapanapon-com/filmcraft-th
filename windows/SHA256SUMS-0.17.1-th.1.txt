@@ -1,0 +1,2 @@
+5c292b3dab6e86d718e8204c042091d89ca43cdbeb76f8f317d735b7d94a936c  filmcraft-0.17.1-th.1-windows-x64-portable.zip
+1747751b411a28a7201e9905d04c5899422f62c4b33aadf13debf0939fefbc69  filmcraft-0.17.1-th.1-windows-x64.msi

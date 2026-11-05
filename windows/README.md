@@ -1,70 +1,50 @@
-# FilmCraft TH สำหรับ Windows 11 / 10 (x64)
+# FilmCraft TH 0.17.1-th.1 — Windows x64
 
-โฟลเดอร์นี้บรรจุแพ็กเกจติดตั้ง สคริปต์สร้างแพ็กเกจ และสคริปต์ทดสอบของ **FilmCraft TH รุ่น 0.17.0-th.1** สำหรับระบบปฏิบัติการ **Windows 11 / 10 (64-bit)**
+รุ่นภาษาไทยสำหรับ Windows 10/11 บนพีซี Intel/AMD 64 บิต ต่อยอดจาก [FilmCraft 0.17.1](https://github.com/storytold/filmcraft/releases/tag/v0.17.1) พร้อมคำแปลไทย 3,763 รายการ เป็นงานแปลอิสระ ไม่ใช่รุ่นที่รับรองโดยผู้พัฒนา ArtCraft ต้นฉบับ
 
----
+## ดาวน์โหลด
 
-## ไฟล์แพ็กเกจพร้อมใช้งาน
+- [ตัวติดตั้ง MSI](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.17.1-th.1/filmcraft-0.17.1-th.1-windows-x64.msi)
+- [Portable ZIP](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.17.1-th.1/filmcraft-0.17.1-th.1-windows-x64-portable.zip)
+- [SHA-256 checksums](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.17.1-th.1/SHA256SUMS-windows-x64.txt)
 
-| ไฟล์ | ประเภท | ขนาด | SHA-256 |
-|---|---|---|---|
-| [FilmCraft-TH-0.17.0-th.1-windows-x64.msi](FilmCraft-TH-0.17.0-th.1-windows-x64.msi) | Windows Installer (`.msi`) | ~34.5 MB | `45e9df8fa92a6418c978f0e3b56354ee3084ab51069aa535b1126abd04ef9afd` |
-| [FilmCraft-TH-0.17.0-th.1-windows-x64-portable.zip](FilmCraft-TH-0.17.0-th.1-windows-x64-portable.zip) | Portable (`.zip`) ไม่ต้องติดตั้ง | ~43.6 MB | `c6dcb2aeae38513890e9463996fc85ae3e82525f8b8bfeda818fd76337c879b3` |
-| [SHA256SUMS.txt](SHA256SUMS.txt) | ไฟล์ตรวจสอบค่า Hash SHA-256 | - | - |
+ไฟล์ใหม่อยู่ใน GitHub Releases ส่วนไฟล์ 0.17.0-th.1 ในโฟลเดอร์นี้เก็บเป็นประวัติ ไม่ใช่รุ่นล่าสุด
 
----
+## ติดตั้งและเลือกภาษาไทย
 
-## วิธีติดตั้งและเริ่มต้นใช้งานบน Windows 11
+1. บันทึกงานและปิด FilmCraft เดิมก่อนอัปเดต
+2. ใช้ MSI แล้วทำตามตัวติดตั้ง หรือแตก ZIP ทั้งโฟลเดอร์แล้วเปิด `filmcraft.exe`
+3. เลือก **Edit → Language → ไทย** หรือ **แก้ไข → ภาษา → ไทย**
+4. Portable เก็บการตั้งค่าและข้อมูลในโฟลเดอร์ `data` ข้าง EXE เพราะมี `portable.txt` กำกับไว้ เก็บสำเนาข้อมูลเดิมก่อนแทนที่โฟลเดอร์
 
-### วิธีที่ 1: แบบติดตั้งมาตรฐาน (`.msi`)
-1. ดาวน์โหลดและดับเบิลคลิกไฟล์ `FilmCraft-TH-0.17.0-th.1-windows-x64.msi`
-2. ทำตามขั้นตอนตัวติดตั้ง (ค่าเริ่มต้นติดตั้งที่ `%LOCALAPPDATA%\Programs\ArtCraft\FilmCraft` หรือเลือกติดตั้งสำหรับผู้ใช้ทุกคน)
-3. เปิดโปรแกรม **FilmCraft** จากเมนู Start
-4. เลือกเมนู **Edit → Language → ไทย** (หรือ **แก้ไข → ภาษา → ไทย**) หรือตั้งค่าใน **Settings → General**
-
-### วิธีที่ 2: แบบพกพา ไม่ต้องติดตั้ง (`Portable .zip`)
-1. แตกไฟล์ `FilmCraft-TH-0.17.0-th.1-windows-x64-portable.zip` ไปยังโฟลเดอร์ที่ต้องการ
-2. ดับเบิลคลิกเปิดไฟล์ `filmcraft.exe` ได้ทันที
-3. ข้อมูลการตั้งค่า (`preferences.json`) และบันทึกการทำงานจะถูกเก็บแยกไว้ในโฟลเดอร์ `data/` ข้างไฟล์ `filmcraft.exe` (เนื่องจากมีไฟล์ `portable.txt` กำกับไว้)
-
----
-
-## ตรวจสอบความถูกต้องของไฟล์ (SHA-256)
-
-เปิด PowerShell ในโฟลเดอร์ `windows/` แล้วรันคำสั่ง:
+แพ็กเกจนี้ **ยังไม่มีลายเซ็น Authenticode** Windows จึงอาจแจ้ง SmartScreen ตรวจสอบแหล่งดาวน์โหลดและ SHA-256 ก่อนใช้งาน
 
 ```powershell
-Get-FileHash .\FilmCraft-TH-0.17.0-th.1-windows-x64.msi, .\FilmCraft-TH-0.17.0-th.1-windows-x64-portable.zip -Algorithm SHA256
+Get-FileHash .\filmcraft-0.17.1-th.1-windows-x64.msi -Algorithm SHA256
+Get-FileHash .\filmcraft-0.17.1-th.1-windows-x64-portable.zip -Algorithm SHA256
 ```
 
-เปรียบเทียบค่าที่ได้กับไฟล์ [SHA256SUMS.txt](SHA256SUMS.txt)
+## การตรวจสอบรุ่นนี้
 
----
+รายละเอียด build และผลตรวจอยู่ใน [รายงาน Windows](validation-0.17.1-th.1.json) การตรวจ build, PE, CLI และไฟล์แพ็กเกจไม่เท่ากับการทดสอบตัดต่อผ่านหน้าจอครบทุกฟังก์ชัน ยังไม่ได้ทดสอบหน้าจอ Windows ของรุ่นใหม่นี้ด้วยมือ
 
-## การรองรับบน Windows 11 ที่ตรวจสอบแล้ว
+## สร้างจากซอร์ส
 
-- **ฟอนต์ภาษาไทย**: ตรวจพบและใช้งานฟอนต์ระบบของ Windows 11 (`Leelawadee UI`, `Leelawadee`, `Tahoma`) อัตโนมัติครบทุกชุดตัวอักษรและวรรณยุกต์
-- **กราฟิกและการถอดรหัสฮาร์ดแวร์**:
-  - รองรับ **Vulkan** และ **DirectX 12** (ทดสอบบน NVIDIA GeForce RTX 5060 Laptop GPU และ AMD Radeon Graphics)
-  - รองรับการถอดรหัสวิดีโอด้วยฮาร์ดแวร์ผ่าน **Windows Media Foundation**
-- **ชุดคำแปลภาษาไทย**: แค็ตตาล็อกภาษาไทยครบ **3,763 รายการ** (`th.tsv`)
-
----
-
-## สคริปต์สำหรับนักพัฒนาบน Windows
-
-หากต้องการคอมไพล์และสร้างแพ็กเกจใหม่จากซอร์สโค้ดบน Windows 11:
+ใช้ PowerShell 7, Rust MSVC toolchain, Windows SDK และ WiX v5 พร้อม UI extension ตาม [คู่มือ packaging](../packaging/windows/package.ps1) หากใช้ฟอนต์ craft-fonts ให้กำหนด `CRAFT_FONTS_DIR` ไปที่ checkout ของฟอนต์ด้วย
 
 ```powershell
-# 1. ตรวจสอบความสมบูรณ์ของแค็ตตาล็อกคำแปลภาษาไทย
 python tools/thai/validate_catalog.py
-
-# 2. รันชุดทดสอบระบบภาษาไทยและฟอนต์บน Windows
-cargo test --release --locked -p filmcraft-ui-egui --lib i18n::tests
-
-# 3. สร้างแพ็กเกจ .zip Portable และ .msi Installer
-powershell -ExecutionPolicy Bypass -File windows/package_windows.ps1
-
-# 4. รันการทดสอบเปิดแอปและจับภาพหน้าจออัตโนมัติ (Smoke Test)
-python windows/smoke_windows.py
+rustup target add x86_64-pc-windows-msvc
+$env:FILMCRAFT_VERSION = "0.17.1-th.1"
+pwsh packaging/windows/package.ps1 -Arch x64
 ```
+
+ได้ MSI และ Portable ZIP ใน `dist/release/` ใช้สคริปต์หลักข้างต้นสำหรับรุ่นใหม่ ส่วน `windows/package_windows.ps1` และ `tools/thai/package_windows.ps1` เป็นสคริปต์รุ่นเดิมที่ยังระบุ 0.17.0-th.1 ไว้
+
+## English
+
+**FilmCraft TH 0.17.1-th.1 for Windows x64** is an independent Thai localization of upstream FilmCraft 0.17.1. Download the MSI installer or portable ZIP above. Save work and quit the old app before updating. Extract the entire ZIP and run `filmcraft.exe`; portable settings live in its adjacent `data` folder. Select **Edit → Language → ไทย**.
+
+These prerelease packages are **not Authenticode-signed** and may trigger SmartScreen. Verify the SHA-256 checksums. Build, architecture, CLI and archive checks do not establish complete GUI editing coverage; this version has not been manually GUI-tested on Windows.
+
+Use the upstream `packaging/windows/package.ps1` command above for new builds. The app/UI identifies as **0.17.1-th.1** while engine/codec crates retain **0.17.1**, preserving upstream encoding behavior. Existing 0.17.0-th.1 files and scripts are retained as historical artifacts; see the [previous Windows documentation](README-0.17.0-th.1.md).

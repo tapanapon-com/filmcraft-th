@@ -1,0 +1,43 @@
+{
+  "version": "0.17.1-th.1",
+  "platform": "Windows x64",
+  "sourceCommit": "9ebed74bd2ad6a8b641c8fa10b48bbe7c8039d6a",
+  "workflowRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42021818898",
+  "checks": {
+    "zipIntegrity": true,
+    "peArchitecture": "x86_64",
+    "guiSubsystem": 2,
+    "cliSubsystem": 3,
+    "embeddedThaiLanguage": true,
+    "nativeCliVersion": "0.17.1-th.1",
+    "msiInstallPolicyCases": 24,
+    "catalogEntries": 3763
+  },
+  "manualWindowsGuiTest": false,
+  "authenticodeSigned": false,
+  "artifacts": [
+    {
+      "file": "filmcraft-0.17.1-th.1-windows-x64-portable.zip",
+      "bytes": 108797865,
+      "sha256": "5c292b3dab6e86d718e8204c042091d89ca43cdbeb76f8f317d735b7d94a936c",
+      "binaries": [
+        {
+          "file": "filmcraft-0.17.1-windows-x64-portable/filmcraft-cli.exe",
+          "machine": "0x8664",
+          "subsystem": 3
+        },
+        {
+          "file": "filmcraft-0.17.1-windows-x64-portable/filmcraft.exe",
+          "machine": "0x8664",
+          "subsystem": 2
+        }
+      ]
+    },
+    {
+      "file": "filmcraft-0.17.1-th.1-windows-x64.msi",
+      "bytes": 89829376,
+      "sha256": "1747751b411a28a7201e9905d04c5899422f62c4b33aadf13debf0939fefbc69"
+    }
+  ],
+  "note": "Published filenames add the Thai distribution suffix; MSI and ZIP payloads are unchanged from the Windows build artifacts. Original artifact stems: filmcraft-0.17.1-windows-x64."
+}
