@@ -5,18 +5,34 @@
   "catalogEntries": 3786,
   "newReferenceTranslations": 22,
   "catalogUnionMissing": 0,
-  "compiledSourceScan": "First compiled report found1missing dynamic menu label; translated it and queued a fresh full gate",
+  "compiledSourceScan": "passed; compiled interface report has zero missing Thai strings",
   "fullCI": {
-    "status": "pending",
-    "previousRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42385377480",
-    "previousTestsPassed": 4846,
-    "previousTestsFailed": 1,
-    "previousTestsSkipped": 52,
-    "change": "Run the existing wall-clock playback drag test exclusively, keeping its five-frame and newer-revision assertions unchanged; rerun the full gate before publication"
+    "status": "passed",
+    "workflowRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42388230021",
+    "testedCommit": "5ff54bef4d22fd8f4fbb1b1846a4eeb92386f976",
+    "testedTree": "6bc62cfbd28c850f61f97bac9e711030c7b4383b",
+    "testsPassed": 4847,
+    "testsSkipped": 52,
+    "testsFailed": 0,
+    "testSeconds": 338.44,
+    "platform": "ubuntu-24.04",
+    "checks": [
+      "fmt",
+      "clippy --workspace --all-targets -D warnings",
+      "nextest workspace lib/bin/integration",
+      "workspace doctests",
+      "compiled i18n report",
+      "layers",
+      "72 attributed assets",
+      "WebAssembly 49 crates"
+    ],
+    "playbackDragTest": "passed in3.594s with the original five-frame and newer-revision assertions; test runs without parallel test contention",
+    "previousRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42385377480"
   },
   "mac": "pending native release build and mounted package checks",
   "windows": "pending native CI build and artifact checks",
   "newTranslations": 23,
   "newSourceTranslations": 1,
-  "compiledThaiMissing": 1
+  "compiledThaiMissing": 0,
+  "validatedAt": "2026-11-07T16:08:29.582783+00:00"
 }

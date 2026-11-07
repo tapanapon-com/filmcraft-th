@@ -22,7 +22,7 @@ The release tag was merged in full. These are selected upstream highlights, cred
 
 ### ผลตรวจ / Validation
 
-The catalog validator passed with no missing reference-catalog keys. Full native tests and platform packaging are being checked before publication; final results belong in [current validation](validation-0.18.0-th.1.json) and [upgrade notes](thai-upgrade-20261107.md).
+The complete source gate passed: 4,847 tests passed, 52 skipped, zero failures; formatting, workspace Clippy, doctests, layers, asset attribution and WebAssembly checks passed. The compiled interface report has zero missing Thai strings. Platform packaging remains pending before publication. See [current validation](validation-0.18.0-th.1.json) and [upgrade notes](thai-upgrade-20261107.md).
 
 Mac packages use ad-hoc signatures and are not notarized. Windows packages are unsigned. Native Windows CI checks do not claim manual testing of every Windows GUI workflow.
 
