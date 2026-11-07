@@ -4,14 +4,14 @@
 
 **Windows 11 / 10 x64 — รุ่นใหม่ 0.18.0-th.1:** [ตัวติดตั้ง MSI](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64.msi) · [Portable ZIP](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64-portable.zip) · [คู่มือและ SHA-256](windows/README.md)
 
-**สถานะรุ่น / Release status:** ซอร์ส, Mac DMG และ Windows x64 เป็น **0.18.0-th.1**. Source, Mac and Windows downloads now share version **0.18.0-th.1**.
+**สถานะรุ่น / Release status:** สาขานี้กำลังเตรียม **0.18.0-th.1**; ลิงก์แพ็กเกจด้านบนเป็นรุ่นเป้าหมายและยังไม่เผยแพร่ Mac/Windows ใหม่จนกว่าผลตรวจจะครบ ดูรุ่นที่ใช้งานได้ใน [Releases](https://github.com/tapanapon-com/filmcraft-th/releases). This upgrade branch is pending full source and native package verification.
 
-แพ็กเกจ arm64 ไม่รองรับ Intel ลงนามแบบ ad-hoc และยังไม่ผ่าน Apple notarization ทดสอบเปิดจาก DMG บน macOS 26.3.1 แล้ว ดูข้อจำกัดและขั้นตอนติดตั้งใน [บทความภาษาไทยและอังกฤษบน Tapanapon.com](https://tapanapon.com/blog/filmcraft-th-thai-video-editor)
+แพ็กเกจ arm64 ไม่รองรับ Intel ลงนามแบบ ad-hoc และยังไม่ผ่าน Apple notarization การตรวจ DMG รุ่นใหม่นี้บน macOS ยังอยู่ระหว่างเตรียม ดูข้อจำกัดและขั้นตอนติดตั้งใน [บทความภาษาไทยและอังกฤษบน Tapanapon.com](https://tapanapon.com/blog/filmcraft-th-thai-video-editor)
 
 
 FilmCraft TH คือรุ่นปรับแต่งส่วนติดต่อภาษาไทยของ **[FilmCraft โดยทีม ArtCraft และผู้ร่วมพัฒนา](https://github.com/storytold/filmcraft)** โปรแกรมตัดต่อวิดีโอแบบ non-linear ที่พัฒนาด้วย Rust โครงการนี้เพิ่มภาษาไทยให้เมนู เครื่องมือ และการตั้งค่า โดยใช้ระบบตัดต่อเดิมของต้นฉบับ
 
-> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft รุ่น 0.18.0-th.1 ทดสอบหน้าจอบน macOS Apple Silicon และตรวจ Windows x64 build/CLI แล้ว; ยังไม่ได้ทดสอบการตัดต่อผ่านหน้าจอ Windows ครบ
+> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft ผลตรวจหน้าจอ Mac และ Windows build/CLI ของ 0.18.0-th.1 ยังรอการทดสอบ ดูสถานะใน [รายงานรุ่นนี้](docs/validation-0.18.0-th.1.json)
 
 ![หน้าตัดต่อวิดีโอภาษาไทย](docs/images/thai/editing.png)
 
@@ -156,3 +156,9 @@ python3 tools/thai/smoke_macos.py "$PWD/dist/thai/FilmCraft.app/Contents/MacOS/F
 - [LICENSE](LICENSE) ที่มีอยู่ใน repository ปลายทางยังคงไว้ ไม่แทนที่สิทธิ์และเครดิตของต้นฉบับ
 - ภาพหน้าจอและสินทรัพย์มีเครดิตแยกใน [ATTRIBUTION.md](ATTRIBUTION.md) และไฟล์ `.attribution` ที่อยู่ข้างแต่ละไฟล์
 - ชื่อ FilmCraft/ArtCraft ใช้เพื่ออ้างอิงที่มา รุ่นนี้ไม่อ้างว่าเป็นผลงานทางการหรือได้รับการรับรองจากผู้พัฒนาต้นฉบับ
+
+## อัปเดตรุ่นไทย / Updating the Thai edition
+
+ตรวจรุ่นใหม่จาก [Thai Releases](https://github.com/tapanapon-com/filmcraft-th/releases) และ [Version Log](docs/version-log.md) แล้วดาวน์โหลด DMG/MSI หรือ portable ZIP ที่ตรงกับเครื่อง บันทึกงานและปิดแอปก่อนแทนที่รุ่นเดิม ระบบ Check for Updates ของต้นฉบับยังคัดเฉพาะรุ่น stable จึงไม่แจ้งรุ่นไทยที่มีชื่อ `-th.1` อัตโนมัติ
+
+For Thai updates, use this repository's Releases and Version Log, verify the checksum, save your work and quit the app before replacing the previous copy. Upstream's automatic checker excludes `-th.1` prereleases; automatic Thai updates are not currently supported.

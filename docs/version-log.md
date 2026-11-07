@@ -25,6 +25,8 @@ The catalog validator passed with no missing reference-catalog keys. Full native
 
 Mac packages use ad-hoc signatures and are not notarized. Windows packages are unsigned. Native Windows CI checks do not claim manual testing of every Windows GUI workflow.
 
+Thai updates are manual downloads from this repository’s Releases. The upstream automatic checker accepts stable versions only and excludes the `-th.1` release names.
+
 ## 0.17.1-th.1 — previous release
 
 3,763 Thai entries and the upstream OGG packet-list memory-budget fix. Previous platform reports remain dated historical records; they do not establish validation of 0.18.0-th.1.
