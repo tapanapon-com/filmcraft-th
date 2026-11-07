@@ -3,7 +3,8 @@
 
 Usage: python3 tools/thai/merge_catalog.py /path/to/drafts.jsonl
 Draft rows: {"key": [context, source], "translation": "..."}
-Existing manually translated rows take priority over draft rows.
+Existing manually translated rows take priority over draft rows. Reviewed rows
+accept source<TAB>translation or context<TAB>source<TAB>translation.
 """
 import json
 import re
@@ -20,9 +21,15 @@ if len(sys.argv) > 1:
     for line in Path(sys.argv[1]).read_text(encoding='utf-8').splitlines():
         d = json.loads(line)
         rows.setdefault(tuple(d['key']), d['translation'])
-for line in (root / 'tools/thai/reviewed.tsv').read_text(encoding='utf-8').splitlines():
-    source, translated = line.split('\t')
-    rows[('', source)] = translated
+for number, line in enumerate((root / 'tools/thai/reviewed.tsv').read_text(encoding='utf-8').splitlines(), 1):
+    columns = line.split('\t')
+    if len(columns) == 2:
+        source, translated = columns
+        context = ''
+    else:
+        assert len(columns) == 3, f'reviewed.tsv:{number}: expected two or three columns'
+        context, source, translated = columns
+    rows[(context, source)] = translated
 for key, translated in list(rows.items()):
     # Project is the same editing concept throughout the catalog.
     translated = translated.replace('โครงการ', 'โปรเจกต์').replace('คีย์สั้น', 'แป้นพิมพ์ลัด').replace('ค่าตั้งค่า', 'ค่าที่ตั้งไว้')
