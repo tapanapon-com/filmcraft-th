@@ -1,5 +1,7 @@
 # Agents
 
+> **Thai edition packaging:** FilmCraft TH 0.18.0-th.1 includes the CLI at `/Applications/FilmCraft.app/Contents/MacOS/filmcraft-cli` in the Mac app bundle. Windows x64 MSI and portable packages include `filmcraft-cli.exe` beside the GUI. See the [Thai Codex/Claude setup guide](https://tapanapon.com/blog/one-per-craft-connect-codex-claude-mcp).
+
 FilmCraft is built to be driven by AI agents, and largely built by them. Part 1 covers using
 FilmCraft from an agent. Part 2 covers developing FilmCraft as an agent.
 
@@ -62,7 +64,7 @@ The release packages ship `filmcraft-cli` alongside the desktop app, so no build
 |---|---|
 | Windows (MSI) | `%LOCALAPPDATA%\Programs\ArtCraft\FilmCraft\filmcraft-cli.exe` by default (`C:\Program Files\ArtCraft\FilmCraft\filmcraft-cli.exe` for an all-users install, under `Program Files (x86)` instead for the 32-bit build, or wherever you installed it otherwise), not on `PATH` |
 | Linux (deb, rpm) | `/usr/bin/filmcraft-cli` |
-| macOS | the separate `filmcraft-cli-<version>-macos-<arch>.zip` release asset (the `.app` holds only the desktop app) |
+| macOS, Thai DMG | `/Applications/FilmCraft.app/Contents/MacOS/filmcraft-cli`; the upstream distribution uses a separate CLI ZIP |
 
 ```sh
 # Windows (PowerShell), default install folder

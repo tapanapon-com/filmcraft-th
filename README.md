@@ -1,28 +1,28 @@
 # FilmCraft TH — โปรแกรมตัดต่อวิดีโอภาษาไทย
 
-**ดาวน์โหลดสำหรับ Mac Apple Silicon:** [FilmCraft TH 0.17.1-th.1 (.dmg)](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.17.1-th.1/FilmCraft-TH-0.17.1-th.1-macOS-arm64.dmg) · [รายละเอียดรุ่นและ SHA-256](https://github.com/tapanapon-com/filmcraft-th/releases/tag/v0.17.1-th.1)
+**ดาวน์โหลดสำหรับ Mac Apple Silicon:** [FilmCraft TH 0.18.0-th.1 (.dmg)](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/FilmCraft-TH-0.18.0-th.1-macOS-arm64.dmg) · [รายละเอียดรุ่นและ SHA-256](https://github.com/tapanapon-com/filmcraft-th/releases/tag/v0.18.0-th.1)
 
-**Windows 11 / 10 x64 — รุ่นใหม่ 0.17.1-th.1:** [ตัวติดตั้ง MSI](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.17.1-th.1/filmcraft-0.17.1-th.1-windows-x64.msi) · [Portable ZIP](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.17.1-th.1/filmcraft-0.17.1-th.1-windows-x64-portable.zip) · [คู่มือและ SHA-256](windows/README.md)
+**Windows 11 / 10 x64 — รุ่นใหม่ 0.18.0-th.1:** [ตัวติดตั้ง MSI](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64.msi) · [Portable ZIP](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64-portable.zip) · [คู่มือและ SHA-256](windows/README.md)
 
-**สถานะรุ่น / Release status:** ซอร์ส, Mac DMG และ Windows x64 เป็น **0.17.1-th.1**. Source, Mac and Windows downloads now share version **0.17.1-th.1**.
+**สถานะรุ่น / Release status:** ซอร์ส, Mac DMG และ Windows x64 เป็น **0.18.0-th.1**. Source, Mac and Windows downloads now share version **0.18.0-th.1**.
 
 แพ็กเกจ arm64 ไม่รองรับ Intel ลงนามแบบ ad-hoc และยังไม่ผ่าน Apple notarization ทดสอบเปิดจาก DMG บน macOS 26.3.1 แล้ว ดูข้อจำกัดและขั้นตอนติดตั้งใน [บทความภาษาไทยและอังกฤษบน Tapanapon.com](https://tapanapon.com/blog/filmcraft-th-thai-video-editor)
 
 
 FilmCraft TH คือรุ่นปรับแต่งส่วนติดต่อภาษาไทยของ **[FilmCraft โดยทีม ArtCraft และผู้ร่วมพัฒนา](https://github.com/storytold/filmcraft)** โปรแกรมตัดต่อวิดีโอแบบ non-linear ที่พัฒนาด้วย Rust โครงการนี้เพิ่มภาษาไทยให้เมนู เครื่องมือ และการตั้งค่า โดยใช้ระบบตัดต่อเดิมของต้นฉบับ
 
-> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft รุ่น 0.17.1-th.1 ทดสอบหน้าจอบน macOS Apple Silicon และตรวจ Windows x64 build/CLI แล้ว; ยังไม่ได้ทดสอบการตัดต่อผ่านหน้าจอ Windows ครบ
+> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft รุ่น 0.18.0-th.1 ทดสอบหน้าจอบน macOS Apple Silicon และตรวจ Windows x64 build/CLI แล้ว; ยังไม่ได้ทดสอบการตัดต่อผ่านหน้าจอ Windows ครบ
 
 ![หน้าตัดต่อวิดีโอภาษาไทย](docs/images/thai/editing.png)
 
-## รุ่นใหม่ 0.17.1-th.1 / What changed
+## รุ่นใหม่ 0.18.0-th.1 / What changed
 
-- อัปเดตฐานเป็น FilmCraft **0.17.1** พร้อมคงคำแปลไทย **3,763 รายการ**
-- รับการแก้ไขต้นฉบับที่จำกัดหน่วยความจำรายการแพ็กเก็ตขณะอ่าน OGG และชุดทดสอบที่เกี่ยวข้อง
-- เปลี่ยนช่องทางตรวจอัปเดตเป็น `tapanapon-com/filmcraft-th` เพื่อให้ใช้รุ่นภาษาไทยต่อเนื่อง รุ่นทดลองให้ดาวน์โหลดจาก Releases โดยตรง
-- แพ็กเกจ Mac Apple Silicon ยังลงนามแบบ ad-hoc และไม่ผ่าน Apple notarization
+- รวมซอร์สจาก tag **FilmCraft 0.18.0** พร้อมคำแปลไทยใหม่ 22 รายการ รวม **3,785 รายการ**
+- รับการปรับ AAF, การอ่านคำบรรยาย TTML และการตรวจช่วงข้อมูล sample ใน MP4 จากต้นฉบับ ดู [Version Log พร้อมลิงก์ต้นทาง](docs/version-log.md)
+- แพ็กเกจ Mac เพิ่ม `filmcraft-cli` สำหรับ MCP ไว้ใน `.app` เช่นเดียวกับแพ็กเกจ Windows
+- ใช้ช่องทางตรวจอัปเดตของ `tapanapon-com/filmcraft-th` และเก็บเครดิต/สัญญาอนุญาตเดิม
 
-Updated to upstream **FilmCraft 0.17.1**, retaining **3,763 Thai translations**. Includes the upstream OGG packet-list memory-budget fix and regression tests. Update checks now point to the Thai repository; download prereleases directly from Releases. The Mac Apple Silicon package remains ad-hoc signed and not Apple-notarized.
+Updated to the complete upstream **FilmCraft 0.18.0** tag. Added 22 translations, **3,785 Thai entries** total. Includes upstream AAF, TTML and MP4 sample-range changes. The Mac bundle now includes the MCP CLI alongside the GUI. See the [version log](docs/version-log.md) for source links and validation.
 
 ## ทำอะไรได้บ้าง
 
@@ -57,7 +57,7 @@ Updated to upstream **FilmCraft 0.17.1**, retaining **3,763 Thai translations**.
 
 ## สิ่งที่รุ่นภาษาไทยเพิ่ม
 
-- แค็ตตาล็อกภาษาไทย **3,763 รายการ** ครบคีย์ที่รวมจากแค็ตตาล็อกภาษาที่มีอยู่ ณ commit ฐาน
+- แค็ตตาล็อกภาษาไทย **3,785 รายการ** ครบคีย์ที่รวมจากแค็ตตาล็อกภาษาที่มีอยู่ ณ commit ฐาน
 - ตัวเลือก `ไทย` และการจดจำภาษาหลังปิดแอป
 - เมนู macOS และคำอธิบายสิทธิ์ไมโครโฟนภาษาไทย
 - ตรวจความพร้อมฟอนต์ไทย ใช้ฟอนต์จากระบบ macOS
@@ -81,6 +81,16 @@ Updated to upstream **FilmCraft 0.17.1**, retaining **3,763 Thai translations**.
 | ตรวจแค็ตตาล็อก | [validate_catalog.py](tools/thai/validate_catalog.py) |
 | ทดสอบหน้าจอ | [smoke_macos.py](tools/thai/smoke_macos.py) |
 
+## ติดตั้งจาก GitHub บน Mac หรือ Windows
+
+GitHub Releases มี DMG สำหรับ Mac Apple Silicon และ MSI/portable ZIP สำหรับ Windows x64 ส่วน Source ZIP และ `git clone` เป็นซอร์สที่ต้องคอมไพล์ก่อนใช้งาน
+
+**Mac:** ดาวน์โหลด DMG เปิดไฟล์แล้วลาก FilmCraft.app ไป Applications จากนั้นเปิดแอปและเลือกภาษาไทย
+
+**Windows:** เปิด MSI และทำตามขั้นตอน หรือแตก portable ZIP ทั้งโฟลเดอร์แล้วเปิด `filmcraft.exe` โดยเก็บ `portable.txt` ข้างแอป
+
+ตรวจ SHA-256 จาก release ก่อนติดตั้ง รุ่น Mac เซ็นแบบ ad-hoc และยังไม่ผ่าน Apple notarization ส่วน Windows ยังไม่มีลายเซ็น Authenticode
+
 ## สร้างและใช้งานบน Windows 11
 
 ต้องมี Rust toolchain (MSVC) และ Python 3 (หากต้องการสร้างแพ็กเกจ MSI ต้องมี .NET SDK และ WiX v5: `dotnet tool install --global wix --version 5.0.2`):
@@ -99,12 +109,12 @@ cargo test --release --locked -p filmcraft-ui-egui --lib i18n::tests
 ### สร้างแพ็กเกจสำหรับ Windows 11 (.zip Portable และ .msi Installer)
 สร้างไฟล์ติดตั้งและแพ็กเกจ Portable ได้ในคำสั่งเดียว:
 ```powershell
-$env:FILMCRAFT_VERSION = "0.17.1-th.1"
+$env:FILMCRAFT_VERSION = "0.18.0-th.1"
 pwsh packaging/windows/package.ps1 -Arch x64
 ```
 จะได้ไฟล์ในโฟลเดอร์ `dist/release/`:
-- `filmcraft-0.17.1-th.1-windows-x64-portable.zip` (แบบไม่ต้องติดตั้ง แตกไฟล์แล้วเปิด `filmcraft.exe` ได้ทันที)
-- `filmcraft-0.17.1-th.1-windows-x64.msi` (ไฟล์ติดตั้ง Windows Installer เมื่อติดตั้ง WiX Toolset แล้ว)
+- `filmcraft-0.18.0-th.1-windows-x64-portable.zip` (แบบไม่ต้องติดตั้ง แตกไฟล์แล้วเปิด `filmcraft.exe` ได้ทันที)
+- `filmcraft-0.18.0-th.1-windows-x64.msi` (ไฟล์ติดตั้ง Windows Installer เมื่อติดตั้ง WiX Toolset แล้ว)
 
 ### ทดสอบการทำงานอัตโนมัติบน Windows 11 (Smoke Test)
 ```powershell
@@ -119,11 +129,11 @@ python tools/thai/smoke_windows.py
 git clone https://github.com/tapanapon-com/filmcraft-th.git
 cd filmcraft-th
 python3 tools/thai/validate_catalog.py
-cargo build --release --locked -p filmcraft
+cargo build --release --locked -p filmcraft -p filmcraft-cli
 cargo run --release --locked -p filmcraft
 ```
 
-สร้างแพ็กเกจ `.app` ด้วย `python3 tools/thai/package_macos.py` ได้ไฟล์ที่ `dist/thai/FilmCraft.app` สคริปต์ลงนามแบบ ad-hoc สำหรับใช้ในเครื่อง ไม่ใช่แอปที่ผ่าน Apple notarization และไม่ติดตั้งทับ Applications อัตโนมัติ หากไม่มีไอคอน `.icns` ในซอร์ส สคริปต์ใช้ไอคอนจาก FilmCraft ที่ติดตั้งไว้เดิม
+สร้างแพ็กเกจ `.app` ด้วย `python3 tools/thai/package_macos.py` ได้ไฟล์ที่ `dist/thai/FilmCraft.app` สคริปต์ลงนามแบบ ad-hoc สำหรับใช้ในเครื่อง ไม่ใช่แอปที่ผ่าน Apple notarization และไม่ติดตั้งทับ Applications อัตโนมัติ ใช้ไอคอนจากซอร์สต้นฉบับโดยตรง จากนั้นสร้าง DMG ด้วย `python3 tools/thai/package_dmg.py` ซึ่งแนบ CLI และใบอนุญาตฟอนต์ไว้ด้วย
 
 ตรวจภาษาและหน้าจอ:
 
@@ -134,13 +144,13 @@ python3 tools/thai/smoke_macos.py "$PWD/dist/thai/FilmCraft.app/Contents/MacOS/F
 
 ไม่มีโมเดลแปลภาษา หรือ Python รวมอยู่ในแอปที่สร้างแล้ว การอัปเดตทับด้วยรุ่นทางการอาจแทนที่การปรับแต่งภาษาไทยนี้
 
-ผลตรวจและรายการทดสอบเดิมที่พบความไม่เสถียร: [บันทึกการตรวจรุ่นภาษาไทย](docs/thai-validation.md)
+ผลตรวจรุ่นปัจจุบัน: [validation-0.18.0-th.1.json](docs/validation-0.18.0-th.1.json) ส่วน [thai-validation.md](docs/thai-validation.md) เป็นรายงานรุ่นก่อนหน้า
 
 ## ต้นฉบับ เครดิต และสัญญาอนุญาต
 
 - **โครงการต้นฉบับ:** [storytold/filmcraft](https://github.com/storytold/filmcraft) โดย ArtCraft และผู้ร่วมพัฒนา
-- **commit ฐาน:** [`2fe0d0460da86621fd8b193dcc0a61f790106200`](https://github.com/storytold/filmcraft/commit/2fe0d0460da86621fd8b193dcc0a61f790106200) — รุ่นพื้นฐาน 0.17.1
-- **README ต้นฉบับ ณ commit ฐาน:** [ดูบน GitHub ต้นฉบับ](https://github.com/storytold/filmcraft/blob/2fe0d0460da86621fd8b193dcc0a61f790106200/README.md)
+- **commit ฐาน:** [`015d5b3ea37e1202a529e6245d3cc021c8c16ffd`](https://github.com/storytold/filmcraft/commit/015d5b3ea37e1202a529e6245d3cc021c8c16ffd) — รุ่นพื้นฐาน 0.18.0
+- **README ต้นฉบับ ณ commit ฐาน:** [ดูบน GitHub ต้นฉบับ](https://github.com/storytold/filmcraft/blob/015d5b3ea37e1202a529e6245d3cc021c8c16ffd/README.md)
 - **ข้อความร่วมภาษาไทย:** [storytold/craft-i18n](https://github.com/storytold/craft-i18n/tree/c199dc459eb3f1f105f87edaf5b0b1f8f32ca846/locales/th)
 - โค้ดต้นฉบับและส่วนปรับแต่งภาษาไทยใช้ **MIT OR Apache-2.0** ตาม [LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE) และ [NOTICE](NOTICE) โดยคงเครดิตเดิมไว้
 - [LICENSE](LICENSE) ที่มีอยู่ใน repository ปลายทางยังคงไว้ ไม่แทนที่สิทธิ์และเครดิตของต้นฉบับ
