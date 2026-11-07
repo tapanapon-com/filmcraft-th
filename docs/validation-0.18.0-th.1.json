@@ -2,11 +2,21 @@
   "date": "2026-11-07",
   "thaiVersion": "0.18.0-th.1",
   "upstreamCommit": "015d5b3ea37e1202a529e6245d3cc021c8c16ffd",
-  "catalogEntries": 3785,
+  "catalogEntries": 3786,
   "newReferenceTranslations": 22,
   "catalogUnionMissing": 0,
-  "compiledSourceScan": "pending",
-  "fullCI": "pending single GitHub Actions gate before publication",
+  "compiledSourceScan": "First compiled report found1missing dynamic menu label; translated it and queued a fresh full gate",
+  "fullCI": {
+    "status": "pending",
+    "previousRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42385377480",
+    "previousTestsPassed": 4846,
+    "previousTestsFailed": 1,
+    "previousTestsSkipped": 52,
+    "change": "Run the existing wall-clock playback drag test exclusively, keeping its five-frame and newer-revision assertions unchanged; rerun the full gate before publication"
+  },
   "mac": "pending native release build and mounted package checks",
-  "windows": "pending native CI build and artifact checks"
+  "windows": "pending native CI build and artifact checks",
+  "newTranslations": 23,
+  "newSourceTranslations": 1,
+  "compiledThaiMissing": 1
 }

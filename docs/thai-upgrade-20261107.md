@@ -2,7 +2,7 @@
 
 Upstream release: https://github.com/storytold/filmcraft/releases/tag/v0.18.0
 
-Thai distribution being prepared: 0.18.0-th.1. Based on the complete upstream release tag, preserving its engine and format crate versions. Existing Thai translations remain, with new source strings translated. Current Thai catalog: 3,785 entries.
+Thai distribution being prepared: 0.18.0-th.1. Based on the complete upstream release tag, preserving its engine and format crate versions. Existing Thai translations remain, with new source strings translated. Current Thai catalog: 3,786 entries.
 
 Catalog validation passed. Native build, platform packaging and integration checks are in progress. This record does not claim that installers have been released or that all upstream functionality has been tested. Previous 0.17.1 validation reports remain historical.
 

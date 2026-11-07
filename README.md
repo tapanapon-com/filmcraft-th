@@ -17,12 +17,12 @@ FilmCraft TH คือรุ่นปรับแต่งส่วนติด�
 
 ## รุ่นใหม่ 0.18.0-th.1 / What changed
 
-- รวมซอร์สจาก tag **FilmCraft 0.18.0** พร้อมคำแปลไทยใหม่ 22 รายการ รวม **3,785 รายการ**
+- รวมซอร์สจาก tag **FilmCraft 0.18.0** พร้อมคำแปลไทยใหม่ 23 รายการ รวม **3,786 รายการ**
 - รับการปรับ AAF, การอ่านคำบรรยาย TTML และการตรวจช่วงข้อมูล sample ใน MP4 จากต้นฉบับ ดู [Version Log พร้อมลิงก์ต้นทาง](docs/version-log.md)
 - แพ็กเกจ Mac เพิ่ม `filmcraft-cli` สำหรับ MCP ไว้ใน `.app` เช่นเดียวกับแพ็กเกจ Windows
 - ใช้ช่องทางตรวจอัปเดตของ `tapanapon-com/filmcraft-th` และเก็บเครดิต/สัญญาอนุญาตเดิม
 
-Updated to the complete upstream **FilmCraft 0.18.0** tag. Added 22 translations, **3,785 Thai entries** total. Includes upstream AAF, TTML and MP4 sample-range changes. The Mac bundle now includes the MCP CLI alongside the GUI. See the [version log](docs/version-log.md) for source links and validation.
+Updated to the complete upstream **FilmCraft 0.18.0** tag. Added 23 translations, **3,786 Thai entries** total. Includes upstream AAF, TTML and MP4 sample-range changes. The Mac bundle now includes the MCP CLI alongside the GUI. See the [version log](docs/version-log.md) for source links and validation.
 
 ## ทำอะไรได้บ้าง
 
@@ -57,7 +57,7 @@ Updated to the complete upstream **FilmCraft 0.18.0** tag. Added 22 translations
 
 ## สิ่งที่รุ่นภาษาไทยเพิ่ม
 
-- แค็ตตาล็อกภาษาไทย **3,785 รายการ** ครบคีย์ที่รวมจากแค็ตตาล็อกภาษาที่มีอยู่ ณ commit ฐาน
+- แค็ตตาล็อกภาษาไทย **3,786 รายการ** ครบคีย์ที่รวมจากแค็ตตาล็อกภาษาที่มีอยู่ ณ commit ฐาน
 - ตัวเลือก `ไทย` และการจดจำภาษาหลังปิดแอป
 - เมนู macOS และคำอธิบายสิทธิ์ไมโครโฟนภาษาไทย
 - ตรวจความพร้อมฟอนต์ไทย ใช้ฟอนต์จากระบบ macOS

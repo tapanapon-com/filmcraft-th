@@ -1,6 +1,6 @@
 # FilmCraft TH 0.18.0-th.1 — Windows x64
 
-รุ่นภาษาไทยสำหรับ Windows 10/11 บนพีซี Intel/AMD 64 บิต ต่อยอดจาก [FilmCraft 0.18.0](https://github.com/storytold/filmcraft/releases/tag/v0.18.0) พร้อมคำแปลไทย 3,785 รายการ เป็นงานแปลอิสระ ไม่ใช่รุ่นที่รับรองโดยผู้พัฒนา ArtCraft ต้นฉบับ
+รุ่นภาษาไทยสำหรับ Windows 10/11 บนพีซี Intel/AMD 64 บิต ต่อยอดจาก [FilmCraft 0.18.0](https://github.com/storytold/filmcraft/releases/tag/v0.18.0) พร้อมคำแปลไทย 3,786 รายการ เป็นงานแปลอิสระ ไม่ใช่รุ่นที่รับรองโดยผู้พัฒนา ArtCraft ต้นฉบับ
 
 ## ดาวน์โหลด
 

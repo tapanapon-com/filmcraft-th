@@ -14,7 +14,8 @@ The release tag was merged in full. These are selected upstream highlights, cred
 
 ### การปรับรุ่นภาษาไทย / Thai edition changes
 
-- เพิ่มคำแปล 22 รายการ รวม 3,785 รายการ / Added 22 translations, 3,785 catalog entries total.
+- เพิ่มคำแปล 23 รายการ รวม 3,786 รายการ / Added 23 translations, 3,786 catalog entries total.
+- รวมข้อความเมนูใหม่ที่พบจาก compiled source report อีก 1 รายการ / Includes one additional dynamic menu label found by the compiled report.
 - แพ็กเกจ Mac เพิ่ม `filmcraft-cli` ใน `.app` สำหรับ MCP / The Mac app bundle now includes `filmcraft-cli` for MCP.
 - แยก DMG สำหรับ Apple Silicon และ MSI/portable ZIP สำหรับ Windows x64 / Separate Mac Apple Silicon and Windows x64 downloads.
 - คงช่องทางตรวจอัปเดตรุ่นไทย ฟอนต์ ใบอนุญาต และเครดิตเดิม / Preserve the Thai update channel, fonts, licenses and attribution.
