@@ -42,7 +42,9 @@ try:
             time.sleep(0.5)
     call('ui.focus')
     assert call('ui.menu.invoke', {'id': 'app.language.thai'}) == 'th'
-    call('ui.resize', {'width': 1440, 'height': 900})
+    # Capture a real app window. Retina captures retain their native pixels;
+    # their PNG container can be compressed losslessly without resizing.
+    call('ui.resize', {'width': 1360, 'height': 850})
     menus = call('ui.menu.list')
     (qa / 'menus.json').write_text(json.dumps(menus, ensure_ascii=False, indent=2), encoding='utf-8')
     assert any(m.get('id') == 'app.language.thai' and m.get('checked') for m in menus)

@@ -29,10 +29,29 @@
     "playbackDragTest": "passed in3.594s with the original five-frame and newer-revision assertions; test runs without parallel test contention",
     "previousRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42385377480"
   },
-  "mac": "pending native release build and mounted package checks",
+  "mac": {
+    "status": "passed",
+    "buildCommit": "43c36df2bbe94edaffebe95f8901a1447c374115",
+    "sha256": "8e297b81d2ca010a2227a95453fc190414883c026c7eff83b58a2f8881e115af",
+    "bytes": 109756173,
+    "cliVersion": "filmcraft-cli 0.18.0-th.1",
+    "bundleVersion": "0.18.0",
+    "gui": "Thai menu selection and saved preferences; native project save/reopen preserved project tree; real editing/settings/export screenshots",
+    "bundledCliRender": "Saved native demo project rendered to PNG with the bundled CLI",
+    "osVersion": "26.3.1",
+    "visualInspection": "Thai editing workspace, settings dialog, export workspace and bundled-CLI rendered frame inspected; clear Thai shaping and real demo media; no personal workspace path in screenshots",
+    "screenshotEncoding": "Lossless PNG compression only; no resize, crop, pixel changes, retouching, UI reconstruction or generative imagery",
+    "screenshotProof": "images/thai/capture-0.18.0-th.1.json",
+    "artifact": "FilmCraft-TH-0.18.0-th.1-macOS-arm64.dmg",
+    "mcpTools": 17,
+    "architecture": "arm64",
+    "notarized": false,
+    "signatures": "ad-hoc; mounted DMG strict verification passed"
+  },
   "windows": "pending native CI build and artifact checks",
   "newTranslations": 23,
   "newSourceTranslations": 1,
   "compiledThaiMissing": 0,
-  "validatedAt": "2026-11-07T16:08:29.582783+00:00"
+  "validatedAt": "2026-11-07T16:08:29.582783+00:00",
+  "platformPackaging": "Mac passed; Windows x64 packaging pending before publication"
 }

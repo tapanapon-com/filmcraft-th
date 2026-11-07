@@ -4,14 +4,14 @@
 
 **Windows 11 / 10 x64 — รุ่นใหม่ 0.18.0-th.1:** [ตัวติดตั้ง MSI](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64.msi) · [Portable ZIP](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64-portable.zip) · [คู่มือและ SHA-256](windows/README.md)
 
-**สถานะรุ่น / Release status:** สาขานี้กำลังเตรียม **0.18.0-th.1**; ลิงก์แพ็กเกจด้านบนเป็นรุ่นเป้าหมายและยังไม่เผยแพร่ Mac/Windows ใหม่จนกว่าผลตรวจจะครบ ดูรุ่นที่ใช้งานได้ใน [Releases](https://github.com/tapanapon-com/filmcraft-th/releases). This upgrade branch is pending full source and native package verification.
+**รุ่นและผลตรวจ / Version and validation:** เอกสารนี้สำหรับ **0.18.0-th.1** ดูไฟล์ที่เผยแพร่และผลตรวจแยกตามแพลตฟอร์มใน [Releases](https://github.com/tapanapon-com/filmcraft-th/releases). This documentation targets **0.18.0-th.1**; consult its published assets and versioned validation for platform coverage.
 
-แพ็กเกจ arm64 ไม่รองรับ Intel ลงนามแบบ ad-hoc และยังไม่ผ่าน Apple notarization การตรวจ DMG รุ่นใหม่นี้บน macOS ยังอยู่ระหว่างเตรียม ดูข้อจำกัดและขั้นตอนติดตั้งใน [บทความภาษาไทยและอังกฤษบน Tapanapon.com](https://tapanapon.com/blog/filmcraft-th-thai-video-editor)
+แพ็กเกจ arm64 ไม่รองรับ Intel ลงนามแบบ ad-hoc และยังไม่ผ่าน Apple notarization ทดสอบเปิดจาก DMG บน macOS 26.3.1 แล้ว ดูข้อจำกัดและขั้นตอนติดตั้งใน [บทความภาษาไทยและอังกฤษบน Tapanapon.com](https://tapanapon.com/blog/filmcraft-th-thai-video-editor)
 
 
 FilmCraft TH คือรุ่นปรับแต่งส่วนติดต่อภาษาไทยของ **[FilmCraft โดยทีม ArtCraft และผู้ร่วมพัฒนา](https://github.com/storytold/filmcraft)** โปรแกรมตัดต่อวิดีโอแบบ non-linear ที่พัฒนาด้วย Rust โครงการนี้เพิ่มภาษาไทยให้เมนู เครื่องมือ และการตั้งค่า โดยใช้ระบบตัดต่อเดิมของต้นฉบับ
 
-> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft ผลตรวจหน้าจอ Mac และ Windows build/CLI ของ 0.18.0-th.1 ยังรอการทดสอบ ดูสถานะใน [รายงานรุ่นนี้](docs/validation-0.18.0-th.1.json)
+> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft ดูผลตรวจแยกตามแพลตฟอร์มใน [รายงานรุ่นนี้](docs/validation-0.18.0-th.1.json); ไม่ได้อ้างว่าทดสอบการตัดต่อผ่านหน้าจอ Windows ครบทุกแบบ
 
 ![หน้าตัดต่อวิดีโอภาษาไทย](docs/images/thai/editing.png)
 
@@ -45,7 +45,7 @@ Updated to the complete upstream **FilmCraft 0.18.0** tag. Added 23 translations
 4. บันทึกโปรเจกต์ก่อนส่งออก โปรเจกต์เก็บโครงสร้างการตัดต่อและการอ้างอิงสื่อ จึงควรเก็บไฟล์สื่อไว้ด้วย
 5. เปิดหน้า **ส่งออก** เลือกตำแหน่งไฟล์ รูปแบบ และช่วงเวลา จากนั้นส่งออกทันทีหรือส่งไปยังคิว
 
-ภาพด้านล่างมาจากโปรเจกต์สาธิตที่ FilmCraft สร้างภาพและเสียงเอง ไม่ใช่งานส่วนตัวของผู้ใช้
+ภาพด้านล่างมาจากโปรเจกต์สาธิตที่ FilmCraft สร้างภาพและเสียงเอง ไม่ใช่งานส่วนตัวของผู้ใช้ ภาพรุ่น 0.18.0-th.1 ถ่ายจากแอปจริงและบีบอัด PNG แบบไม่เปลี่ยนขนาดหรือพิกเซล ดู [บันทึกการจับภาพ](docs/images/thai/capture-0.18.0-th.1.json)
 
 ### ตั้งค่าภาษาไทย
 
