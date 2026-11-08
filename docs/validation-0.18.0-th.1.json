@@ -31,27 +31,52 @@
   },
   "mac": {
     "status": "passed",
-    "buildCommit": "43c36df2bbe94edaffebe95f8901a1447c374115",
+    "artifact": "FilmCraft-TH-0.18.0-th.1-macOS-arm64.dmg",
     "sha256": "8e297b81d2ca010a2227a95453fc190414883c026c7eff83b58a2f8881e115af",
     "bytes": 109756173,
-    "cliVersion": "filmcraft-cli 0.18.0-th.1",
+    "architecture": "arm64",
     "bundleVersion": "0.18.0",
+    "cliVersion": "filmcraft-cli 0.18.0-th.1",
+    "mcpTools": 17,
     "gui": "Thai menu selection and saved preferences; native project save/reopen preserved project tree; real editing/settings/export screenshots",
-    "bundledCliRender": "Saved native demo project rendered to PNG with the bundled CLI",
-    "osVersion": "26.3.1",
-    "visualInspection": "Thai editing workspace, settings dialog, export workspace and bundled-CLI rendered frame inspected; clear Thai shaping and real demo media; no personal workspace path in screenshots",
+    "signatures": "ad-hoc; mounted DMG strict verification passed",
+    "notarized": false,
     "screenshotEncoding": "Lossless PNG compression only; no resize, crop, pixel changes, retouching, UI reconstruction or generative imagery",
     "screenshotProof": "images/thai/capture-0.18.0-th.1.json",
-    "artifact": "FilmCraft-TH-0.18.0-th.1-macOS-arm64.dmg",
-    "mcpTools": 17,
-    "architecture": "arm64",
-    "notarized": false,
-    "signatures": "ad-hoc; mounted DMG strict verification passed"
+    "visualInspection": "Thai editing workspace, settings dialog, export workspace and bundled-CLI rendered frame inspected; clear Thai shaping and real demo media; no personal workspace path in screenshots",
+    "osVersion": "26.3.1",
+    "buildCommit": "43c36df2bbe94edaffebe95f8901a1447c374115"
   },
-  "windows": "pending native CI build and artifact checks",
+  "windows": {
+    "date": "2026-11-07",
+    "thaiVersion": "0.18.0-th.1",
+    "sourceCommit": "5f048e9ab7282461e88412126eaec082e57b5160",
+    "workflowRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42398974125",
+    "nativeWindowsCI": "success",
+    "artifacts": [
+      {
+        "name": "filmcraft-0.18.0-th.1-windows-x64.msi",
+        "sha256": "e4329b68b94b0d3c1c1853320567bb6e33215c63a9e3a71ad5a88c4cfd9f3ae0",
+        "bytes": 90263552
+      },
+      {
+        "name": "filmcraft-0.18.0-th.1-windows-x64-portable.zip",
+        "sha256": "7a38d906552585c7a4e2ef92c53e003a7ec5786e31bdc7fa9caae2b3eaa8931e",
+        "bytes": 109395165
+      }
+    ],
+    "portableExecutables": {
+      "filmcraft.exe": "PE x64 verified",
+      "filmcraft-cli.exe": "PE x64 verified"
+    },
+    "mcpTools": 17,
+    "status": "passed",
+    "manualWindowsGuiTested": false,
+    "limitations": "Unsigned packages. Native CI built the binaries and ran CLI/MCP and installer policy checks; no manual Windows GUI or installed-app editing coverage is claimed."
+  },
   "newTranslations": 23,
   "newSourceTranslations": 1,
   "compiledThaiMissing": 0,
-  "validatedAt": "2026-11-07T16:08:29.582783+00:00",
-  "platformPackaging": "Mac passed; Windows x64 packaging pending before publication"
+  "validatedAt": "2026-11-08T13:59:08.182143+00:00",
+  "platformPackaging": "passed; exact artifacts identified by the hashes below"
 }

@@ -22,7 +22,11 @@ The release tag was merged in full. These are selected upstream highlights, cred
 
 ### ผลตรวจ / Validation
 
-The complete source gate passed: 4,847 tests passed, 52 skipped, zero failures; formatting, workspace Clippy, doctests, layers, asset attribution and WebAssembly checks passed. The compiled interface report has zero missing Thai strings. Platform packaging remains pending before publication. See [current validation](validation-0.18.0-th.1.json) and [upgrade notes](thai-upgrade-20261107.md).
+Complete source gate passed ([workflow](https://github.com/tapanapon-com/filmcraft-th/actions/runs/42388230021)); the compiled interface report has zero missing Thai strings. Catalog format, placeholders and reference-key coverage passed.
+
+Mac: mounted-DMG integrity, strict ad-hoc signatures, arm64 GUI/CLI, Thai interface, native file save/reopen and real screenshots passed; MCP 17 tools. Windows x64: native build, CLI version, MCP 17 tools, installer policy, MSI/portable structure and SHA-256 checks passed ([workflow](https://github.com/tapanapon-com/filmcraft-th/actions/runs/42398974125)). Manual testing of every Windows GUI workflow is not claimed.
+
+See [current validation](validation-0.18.0-th.1.json) for artifact hashes and exact build provenance.
 
 Mac packages use ad-hoc signatures and are not notarized. Windows packages are unsigned. Native Windows CI checks do not claim manual testing of every Windows GUI workflow.
 

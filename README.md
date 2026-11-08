@@ -4,14 +4,14 @@
 
 **Windows 11 / 10 x64 — รุ่นใหม่ 0.18.0-th.1:** [ตัวติดตั้ง MSI](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64.msi) · [Portable ZIP](https://github.com/tapanapon-com/filmcraft-th/releases/download/v0.18.0-th.1/filmcraft-0.18.0-th.1-windows-x64-portable.zip) · [คู่มือและ SHA-256](windows/README.md)
 
-**รุ่นและผลตรวจ / Version and validation:** เอกสารนี้สำหรับ **0.18.0-th.1** ดูไฟล์ที่เผยแพร่และผลตรวจแยกตามแพลตฟอร์มใน [Releases](https://github.com/tapanapon-com/filmcraft-th/releases). This documentation targets **0.18.0-th.1**; consult its published assets and versioned validation for platform coverage.
+**สถานะรุ่น / Release status:** ซอร์ส, Mac DMG และ Windows x64 เป็น **0.18.0-th.1**. Source, Mac and Windows downloads now share version **0.18.0-th.1**.
 
 แพ็กเกจ arm64 ไม่รองรับ Intel ลงนามแบบ ad-hoc และยังไม่ผ่าน Apple notarization ทดสอบเปิดจาก DMG บน macOS 26.3.1 แล้ว ดูข้อจำกัดและขั้นตอนติดตั้งใน [บทความภาษาไทยและอังกฤษบน Tapanapon.com](https://tapanapon.com/blog/filmcraft-th-thai-video-editor)
 
 
 FilmCraft TH คือรุ่นปรับแต่งส่วนติดต่อภาษาไทยของ **[FilmCraft โดยทีม ArtCraft และผู้ร่วมพัฒนา](https://github.com/storytold/filmcraft)** โปรแกรมตัดต่อวิดีโอแบบ non-linear ที่พัฒนาด้วย Rust โครงการนี้เพิ่มภาษาไทยให้เมนู เครื่องมือ และการตั้งค่า โดยใช้ระบบตัดต่อเดิมของต้นฉบับ
 
-> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft ดูผลตรวจแยกตามแพลตฟอร์มใน [รายงานรุ่นนี้](docs/validation-0.18.0-th.1.json); ไม่ได้อ้างว่าทดสอบการตัดต่อผ่านหน้าจอ Windows ครบทุกแบบ
+> เป็นรุ่นดัดแปลงโดยชุมชน ไม่ใช่รุ่นภาษาไทยทางการจากทีม FilmCraft/ArtCraft รุ่น 0.18.0-th.1 ทดสอบหน้าจอบน macOS Apple Silicon และตรวจ Windows x64 build/CLI แล้ว; ยังไม่ได้ทดสอบการตัดต่อผ่านหน้าจอ Windows ครบ
 
 ![หน้าตัดต่อวิดีโอภาษาไทย](docs/images/thai/editing.png)
 
