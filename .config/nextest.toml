@@ -16,3 +16,10 @@ test-group = "nvenc"
 [[profile.default.overrides]]
 filter = "package(filmcraft-render) and binary(mixer_perf)"
 threads-required = "num-test-threads"
+
+# Playback progress during a continuous drag is wall-clock-sensitive: reserve the
+# runner's test slots so parallel decode/render tests cannot starve its workers.
+# Keep the original five-frame and newer-revision assertions unchanged.
+[[profile.default.overrides]]
+filter = "package(filmcraft-ui-egui) and test(/^perf_ui::program_monitor_plays_on_while_a_value_is_dragged$/)"
+threads-required = "num-test-threads"
