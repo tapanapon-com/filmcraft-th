@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-07",
+  "thaiVersion": "0.18.0-th.1",
+  "sourceCommit": "5f048e9ab7282461e88412126eaec082e57b5160",
+  "workflowRun": "https://github.com/tapanapon-com/filmcraft-th/actions/runs/42398974125",
+  "nativeWindowsCI": "success",
+  "artifacts": [
+    {
+      "name": "filmcraft-0.18.0-th.1-windows-x64.msi",
+      "sha256": "e4329b68b94b0d3c1c1853320567bb6e33215c63a9e3a71ad5a88c4cfd9f3ae0",
+      "bytes": 90263552
+    },
+    {
+      "name": "filmcraft-0.18.0-th.1-windows-x64-portable.zip",
+      "sha256": "7a38d906552585c7a4e2ef92c53e003a7ec5786e31bdc7fa9caae2b3eaa8931e",
+      "bytes": 109395165
+    }
+  ],
+  "portableExecutables": {
+    "filmcraft.exe": "PE x64 verified",
+    "filmcraft-cli.exe": "PE x64 verified"
+  },
+  "mcpTools": 17,
+  "status": "passed",
+  "manualWindowsGuiTested": false,
+  "limitations": "Unsigned packages. Native CI built the binaries and ran CLI/MCP and installer policy checks; no manual Windows GUI or installed-app editing coverage is claimed."
+}

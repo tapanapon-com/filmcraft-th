@@ -9,7 +9,7 @@ import sys
 import time
 from pathlib import Path
 root = Path(__file__).resolve().parents[2]
-qa = root / 'target/thai-qa'
+qa = Path(os.environ.get('FILMCRAFT_THAI_QA_DIR', str(root / 'target/thai-qa')))
 qa.mkdir(parents=True, exist_ok=True)
 with socket.socket() as listener:
     listener.bind(('127.0.0.1', 0))
@@ -42,11 +42,22 @@ try:
             time.sleep(0.5)
     call('ui.focus')
     assert call('ui.menu.invoke', {'id': 'app.language.thai'}) == 'th'
-    call('ui.resize', {'width': 1440, 'height': 900})
+    # Capture a real app window. Retina captures retain their native pixels;
+    # their PNG container can be compressed losslessly without resizing.
+    call('ui.resize', {'width': 1360, 'height': 850})
     menus = call('ui.menu.list')
     (qa / 'menus.json').write_text(json.dumps(menus, ensure_ascii=False, indent=2), encoding='utf-8')
     assert any(m.get('id') == 'app.language.thai' and m.get('checked') for m in menus)
     call('engine.execute', {'command': 'file.openDemoProject', 'params': {}})
+    project = qa / 'filmcraft-th-demo.fcproj'
+    call('engine.execute', {'command': 'file.saveAs', 'params': {'path': str(project)}})
+    before = call('engine.execute', {'command': 'project.inspect', 'params': {}})
+    call('engine.execute', {'command': 'file.open', 'params': {'path': str(project)}})
+    after = call('engine.execute', {'command': 'project.inspect', 'params': {}})
+    for key in ('name', 'root', 'activeSequence', 'sourceItem'):
+        assert before[key] == after[key], ('native project round-trip changed', key)
+    (qa / 'project-roundtrip.json').write_text(json.dumps({'before': before, 'after': after}, ensure_ascii=False, indent=2), encoding='utf-8')
+    assert project.stat().st_size > 100
     call('ui.set', {'mode': 'edit'})
     time.sleep(1)
     call('ui.screenshot', {'path': str(qa / 'editing.png')})
@@ -59,7 +70,7 @@ try:
     (qa / 'state.json').write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
     prefs = json.loads((qa / 'data/preferences.json').read_text(encoding='utf-8'))
     assert prefs['general']['interfaceLanguage'] == 'th'
-    print('PASS: Thai menu selection, preferences, demo project, editing/settings/export screenshots')
+    print('PASS: Thai menu selection, preferences, native project save/reopen, demo project, editing/settings/export screenshots')
 finally:
     try:
         call('app.quit')

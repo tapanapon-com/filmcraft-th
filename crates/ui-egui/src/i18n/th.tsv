@@ -41,6 +41,7 @@
 	1/2	1/2
 	10 Bit Black Point	จุดดำ 10 บิต
 	10 Bit White Point	จุดขาว 10 บิต
+	10-bit color	สี 10 บิต
 	105mm Prime	เลนส์ไพรม์ 105 มม.
 	16 bit	16 บิต
 	16-bit half float, linear	เลขทศนิยมแบบ half float 16 บิต เชิงเส้น
@@ -128,6 +129,7 @@
 	Add custom color…	เพิ่มสีเฉพาะ…
 	Add keyframe	เพิ่มคีย์เฟรม
 	Add media to your project. Drop files anywhere in the window, or choose a source below.	เพิ่มสื่อลงในโปรเจกต์ ลากไฟล์มาวางที่ใดก็ได้ในหน้าต่าง หรือเลือกแหล่งข้อมูลด้านล่าง
+	Add media to your project. Drop files or folders anywhere in the window, or choose a source below.	เพิ่มสื่อลงในโปรเจกต์ ลากไฟล์หรือโฟลเดอร์มาวางในหน้าต่าง หรือเลือกแหล่งที่มาด้านล่าง
 	Add to Favorites	เพิ่มลงในรายการที่ชื่นชอบ
 	Add to favorites	เพิ่มลงในรายการที่ชื่นชอบ
 	Add tracks automatically when editing source clips onto the Timeline	เพิ่มแทร็กอัตโนมัติเมื่อตัดคลิปแหล่งต้นฉบับลงบนไทม์ไลน์
@@ -167,6 +169,7 @@
 	All Categories	ทุกหมวดหมู่
 	All Empty Tracks	แทร็กว่างทั้งหมด
 	All Events	เหตุการณ์ทั้งหมด
+	All Intra	ทุกเฟรมเป็นคีย์เฟรม
 	All Panels	แผงทั้งหมด
 	All lines	ทุกเส้น
 	All markers are hidden by the colour filter.	ตัวกรองสีซ่อนมาร์กเกอร์ทั้งหมดอยู่
@@ -1108,6 +1111,7 @@
 	EssentialSound	เสียงหลัก
 	Estimated file size: {size}	ขนาดไฟล์ประมาณ: {size}
 	Events	เหตุการณ์
+	Every frame a keyframe (edit-friendly, larger files)	ทุกเฟรมเป็นคีย์เฟรม (เหมาะกับการตัดต่อ ไฟล์มีขนาดใหญ่ขึ้น)
 	Evolution	การพัฒนา
 	Evolution Options	ตัวเลือกการพัฒนา
 	Exact name matches only	จับคู่ชื่อที่ตรงกันเท่านั้น
@@ -1316,6 +1320,7 @@
 	From South	จากด้านใต้
 	From West	จากด้านตะวันตก
 	From file…	จากไฟล์…
+	From preset file:	จากไฟล์ค่าที่ตั้งไว้:
 	From the Left	จากด้านซ้าย
 	From the Right	จากด้านขวา
 	Front + LFE	ด้านหน้า + LFE
@@ -1323,6 +1328,7 @@
 	Front + Rear + LFE	ด้านหน้า + ด้านหลัง + LFE
 	Front Only	ด้านหน้าเท่านั้น
 	Full	เต็ม
+	Full Screen Program Monitor	จอโปรแกรมแบบเต็มหน้าจอ
 	Full screen	เต็มหน้าจอ
 	Fuzz	ความคลุมเครือ
 	GB	GB
@@ -1443,6 +1449,10 @@
 	H.264 9:16 portrait, scaled to fill, VBR 1 pass, 10 Mbps, loudness normalized to −14 LUFS	H.264 แนวตั้ง 9:16 ขยายเต็มเฟรม, VBR 1 รอบ, 10 Mbps, ปรับความดังเป็น −14 LUFS
 	H.264 9:16 portrait, scaled to fill, VBR 1 pass, 12 Mbps, loudness normalized to −14 LUFS	H.264 แนวตั้ง 9:16 ขยายเต็มเฟรม, VBR 1 รอบ, 12 Mbps, ปรับความดังเป็น −14 LUFS
 	H.264 9:16 portrait, scaled to fill, VBR 1 pass, 8 Mbps, loudness normalized to −14 LUFS	H.264 แนวตั้ง 9:16 ขยายเต็มเฟรม, VBR 1 รอบ, 8 Mbps, ปรับความดังเป็น −14 LUFS
+	H.264 High 10 (10-bit 4:2:0) at the sequence's size, constant quality CRF 16, AAC 320 kbps; a 10-bit master	H.264 High 10 (10 บิต 4:2:0) ตามขนาดซีเควนซ์ คุณภาพคงที่ CRF 16, AAC 320 kbps; ไฟล์มาสเตอร์ 10 บิต
+	H.264 High 10 Intra	H.264 High 10 Intra
+	H.264 High 10 Intra (10-bit 4:2:0, every frame a keyframe), CRF 12, AAC 320 kbps; an edit-friendly intermediate	H.264 High 10 Intra (10 บิต 4:2:0 ทุกเฟรมเป็นคีย์เฟรม), CRF 12, AAC 320 kbps; ไฟล์กลางที่เหมาะกับการตัดต่อ
+	H.264 High 10 Master	มาสเตอร์ H.264 High 10
 	H.264 at the sequence's frame size and rate; 0.05 bits per pixel	H.264 ที่ขนาดเฟรมและอัตราเฟรมของซีเควนซ์ 0.05 บิตต่อพิกเซล
 	H.264 at the sequence's frame size and rate; 0.1 bits per pixel	H.264 ที่ขนาดเฟรมและอัตราเฟรมของซีเควนซ์ 0.1 บิตต่อพิกเซล
 	H.264 at the sequence's frame size and rate; bitrate adapts to the frame size (0.2 bits per pixel)	H.264 ที่ขนาดเฟรมและอัตราเฟรมของซีเควนซ์ ความเร็วบิตปรับตามขนาดเฟรม (0.2 บิตต่อพิกเซล)
@@ -1488,6 +1498,7 @@
 	Hide FilmCraft	ซ่อน FilmCraft
 	Hide Others	ซ่อนอย่างอื่น
 	High	สูง
+	High 10	High 10
 	High Cutoff	ตัดสูงสุด
 	High Frequency Cut	ตัดความถี่สูง
 	High Frequency Damping	การหน่วงความถี่สูง
@@ -1566,6 +1577,11 @@
 	Import numbered stills as image sequences	นำเข้าภาพถ่ายที่มีเลขลำดับเป็นลำดับภาพ
 	Import: no file chosen (agents: export.presets.import {path})	นำเข้า: ไม่ได้เลือกไฟล์ (agent: export.presets.import {path})
 	Import: no file chosen (agents: shortcuts.import {path})	นำเข้า: ไม่ได้เลือกไฟล์ (agent: shortcuts.import {path})
+	Imported {n} preset(s)	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว
+	Imported {n} preset(s); not imported: {error}	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; รายการที่ไม่นำเข้า: {error}
+	Imported {n} preset(s); {skipped} skipped	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; ข้าม {skipped} รายการ
+	Imported {n} preset(s); {skipped} skipped, {warnings} with unsupported parameters	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; ข้าม {skipped} รายการ และมี {warnings} รายการที่ใช้พารามิเตอร์ที่ไม่รองรับ
+	Imported {n} preset(s); {warnings} with unsupported parameters	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; มี {warnings} รายการที่ใช้พารามิเตอร์ที่ไม่รองรับ
 	Imported “{name}”	นำเข้า “{name}”
 	Import…	นำเข้า…
 	Impulse	อิมพูลส์
@@ -1850,6 +1866,7 @@
 	Main (8-bit)	Main (8 บิต)
 	Main (8-bit; Main 10 for HDR sequences)	Main (8 บิต; Main 10 สำหรับซีเควนซ์ HDR)
 	Main 10 (10-bit, HDR)	Main 10 (10 บิต, HDR)
+	Maintain Audio Pitch	คงระดับเสียงสูงต่ำ
 	Maintain pitch while shuttling	คงระดับเสียงสูงต่ำขณะเล่นกรอ
 	Major Radius	รัศมีหลัก
 	Make Offline	ทำให้เป็นออฟไลน์
@@ -2144,6 +2161,7 @@
 	No model credits were built into this copy.	สำเนานี้ไม่ได้รวมเครดิตของโมเดลไว้
 	No multi-camera clip at the playhead	ไม่มีคลิปหลายกล้องที่ตำแหน่งหัวอ่าน
 	No plugins are installed. Changes will take effect the next time you start FilmCraft.	ไม่มีปลั๊กอินติดตั้ง การเปลี่ยนแปลงจะมีผลเมื่อเปิด FilmCraft ครั้งถัดไป
+	No presets folder: the app has no data directory	ไม่มีโฟลเดอร์ค่าที่ตั้งไว้ เนื่องจากแอปไม่มีไดเรกทอรีข้อมูล
 	No saved colors	ไม่มีสีที่บันทึกไว้
 	No saved guide templates.	ไม่มีแม่แบบเส้นไกด์ที่บันทึกไว้
 	No sequence open	ไม่มีซีเควนซ์เปิด
@@ -2241,6 +2259,7 @@
 	Open Ingest Settings	เปิดตั้งค่าการนำเข้า
 	Open Link	เปิดลิงก์
 	Open Most Recent	เปิดรายการล่าสุด
+	Open Presets Folder	เปิดโฟลเดอร์ค่าที่ตั้งไว้
 	Open Project…	เปิดโปรเจกต์…
 	Open Recent	เปิดไฟล์ล่าสุด
 	Open Search	เปิดการค้นหา
@@ -2437,6 +2456,9 @@
 	Preserve Scale	รักษาขนาด
 	Preset	ค่าที่กำหนดไว้ล่วงหน้า
 	Preset Manager	ตัวจัดการค่าที่ตั้งไว้
+	Preset library is up to date	คลังค่าที่ตั้งไว้เป็นรุ่นล่าสุดแล้ว
+	Preset library updated	อัปเดตคลังค่าที่ตั้งไว้แล้ว
+	Preset library updated: {imported} loaded, {removed} removed	อัปเดตคลังค่าที่ตั้งไว้แล้ว: โหลด {imported} รายการ ลบ {removed} รายการ
 	Preset name	ชื่อค่าที่ตั้งไว้
 	Preset:	ค่าที่ตั้งไว้:
 	Presets	ค่าที่ตั้งไว้
@@ -2780,6 +2802,7 @@
 	Scale to frame size	ขยายไปยังขนาดเฟรม
 	Scaling	การขยายขนาด
 	Scan Lines	เส้นแนวนอน
+	Scan Presets Folder	สแกนโฟลเดอร์ค่าที่ตั้งไว้
 	Scene	ฉาก
 	Scene Edit Detection	ตรวจจับจุดตัดฉาก
 	Scene Edit Detection: analysing in the background (see Progress)	การตรวจจับการตัดฉาก: กำลังวิเคราะห์ในพื้นหลัง (ดูข้อมูลความก้าวหน้า)

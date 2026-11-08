@@ -885,3 +885,26 @@ No video	ไม่มีวิดีโอ
 No audio	ไม่มีเสียง
 Uncompressed	ไม่บีบอัด
 16-bit half float, linear	เลขทศนิยมแบบ half float 16 บิต เชิงเส้น
+	10-bit color	สี 10 บิต
+	Add media to your project. Drop files or folders anywhere in the window, or choose a source below.	เพิ่มสื่อลงในโปรเจกต์ ลากไฟล์หรือโฟลเดอร์มาวางในหน้าต่าง หรือเลือกแหล่งที่มาด้านล่าง
+	All Intra	ทุกเฟรมเป็นคีย์เฟรม
+	Every frame a keyframe (edit-friendly, larger files)	ทุกเฟรมเป็นคีย์เฟรม (เหมาะกับการตัดต่อ ไฟล์มีขนาดใหญ่ขึ้น)
+	From preset file:	จากไฟล์ค่าที่ตั้งไว้:
+	H.264 High 10 (10-bit 4:2:0) at the sequence's size, constant quality CRF 16, AAC 320 kbps; a 10-bit master	H.264 High 10 (10 บิต 4:2:0) ตามขนาดซีเควนซ์ คุณภาพคงที่ CRF 16, AAC 320 kbps; ไฟล์มาสเตอร์ 10 บิต
+	H.264 High 10 Intra	H.264 High 10 Intra
+	H.264 High 10 Intra (10-bit 4:2:0, every frame a keyframe), CRF 12, AAC 320 kbps; an edit-friendly intermediate	H.264 High 10 Intra (10 บิต 4:2:0 ทุกเฟรมเป็นคีย์เฟรม), CRF 12, AAC 320 kbps; ไฟล์กลางที่เหมาะกับการตัดต่อ
+	H.264 High 10 Master	มาสเตอร์ H.264 High 10
+	High 10	High 10
+	Imported {n} preset(s)	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว
+	Imported {n} preset(s); not imported: {error}	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; รายการที่ไม่นำเข้า: {error}
+	Imported {n} preset(s); {skipped} skipped	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; ข้าม {skipped} รายการ
+	Imported {n} preset(s); {skipped} skipped, {warnings} with unsupported parameters	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; ข้าม {skipped} รายการ และมี {warnings} รายการที่ใช้พารามิเตอร์ที่ไม่รองรับ
+	Imported {n} preset(s); {warnings} with unsupported parameters	นำเข้าค่าที่ตั้งไว้ {n} รายการแล้ว; มี {warnings} รายการที่ใช้พารามิเตอร์ที่ไม่รองรับ
+	Maintain Audio Pitch	คงระดับเสียงสูงต่ำ
+	No presets folder: the app has no data directory	ไม่มีโฟลเดอร์ค่าที่ตั้งไว้ เนื่องจากแอปไม่มีไดเรกทอรีข้อมูล
+	Open Presets Folder	เปิดโฟลเดอร์ค่าที่ตั้งไว้
+	Preset library is up to date	คลังค่าที่ตั้งไว้เป็นรุ่นล่าสุดแล้ว
+	Preset library updated	อัปเดตคลังค่าที่ตั้งไว้แล้ว
+	Preset library updated: {imported} loaded, {removed} removed	อัปเดตคลังค่าที่ตั้งไว้แล้ว: โหลด {imported} รายการ ลบ {removed} รายการ
+	Scan Presets Folder	สแกนโฟลเดอร์ค่าที่ตั้งไว้
+	Full Screen Program Monitor	จอโปรแกรมแบบเต็มหน้าจอ

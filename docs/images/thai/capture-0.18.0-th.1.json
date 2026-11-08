@@ -1,0 +1,43 @@
+{
+  "app": "FilmCraft TH",
+  "version": "0.18.0-th.1",
+  "capturedFrom": "Mounted verified Mac DMG; real application control API",
+  "capturedAt": "2026-11-07T16:36:40.389173+00:00",
+  "encoding": "Lossless PNG compression only; no resize, crop, pixel changes, retouching, UI reconstruction or generative imagery",
+  "screenshots": [
+    {
+      "file": "editing.png",
+      "width": 2720,
+      "height": 1700,
+      "rawCaptureSha256": "a952dd327949d2bbc6d421fc91b69f9d8d0c34382d7937e605f0313ad546dc06",
+      "rawBytes": 18499178,
+      "pngSha256": "015544ccad9d6d11d030a73b22a7f1f1b53e968773134dbeb8228fd403674e0c",
+      "pngBytes": 541099,
+      "rgbaPixelSha256": "0569509e5c5470e73e2a91bdec5521aa81a1acf18d8131fbdc16a2fa6dabe87d",
+      "pixelsUnchanged": true
+    },
+    {
+      "file": "settings.png",
+      "width": 2720,
+      "height": 1700,
+      "rawCaptureSha256": "7c014a0c500eb13e760305d98cb7850dc45382646f5d3ca81df50ba7aee4593e",
+      "rawBytes": 18499178,
+      "pngSha256": "ad4b7892aac04aa6b091d5c355f75dda15d0f8f1b6476a412590f3aab884efe4",
+      "pngBytes": 357407,
+      "rgbaPixelSha256": "9463b9c04c4d6c4ee383620fdbef6a171dad4b38ad4a182668e8f0da62568715",
+      "pixelsUnchanged": true
+    },
+    {
+      "file": "export.png",
+      "width": 2720,
+      "height": 1700,
+      "rawCaptureSha256": "1df68e81a468d4739975aae7096c22c80c1e5e54dea2c65ac6150407059f1b12",
+      "rawBytes": 18499178,
+      "pngSha256": "c9c58b64963500cf31d6ffaf3af8d3895de824fe2c487aad954a75104a5957fe",
+      "pngBytes": 572531,
+      "rgbaPixelSha256": "f1aee093b7f2ea71232b0adc09099d5668c2b375392517947df877aa6f01985b",
+      "pixelsUnchanged": true
+    }
+  ],
+  "buildCommit": "43c36df2bbe94edaffebe95f8901a1447c374115"
+}
